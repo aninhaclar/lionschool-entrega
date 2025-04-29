@@ -61,7 +61,7 @@ fun StudentCard() {
                 .padding(start = 10.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            //dados
+
             Image(painter = painterResource(R.drawable.ellipse), contentDescription = "", modifier = Modifier.size(45.dp))
             Column(modifier = Modifier.padding(start = 10.dp)) {
                 Text("Luana Oliveira", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.SemiBold, modifier = Modifier.padding(bottom = 4.dp))
@@ -74,7 +74,7 @@ fun StudentCard() {
                 }
             }
 
-            // spacer para empurrar a coluna para o final
+
             Spacer(modifier = Modifier.weight(1f))
 
             Column(

@@ -1,6 +1,6 @@
 package br.senai.sp.jandira.lionschool.Screens
 
-package br.senai.sp.jandira.lionschool.screens
+
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image

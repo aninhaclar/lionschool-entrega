@@ -35,7 +35,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.lionschool.R
-import br.senai.sp.jandira.lionschool.components.studentCard
+import br.senai.sp.jandira.lionschool.components.StudentCard
+import br.senai.sp.jandira.lionschool.components.SubjectCard
 
 @Composable
 fun StudentScreen(){
@@ -61,7 +62,7 @@ fun StudentScreen(){
                             )
                             Text(
                                 text = stringResource(R.string.app_name),
-                                color = colorResource(R.color.blueschool),
+                                color = colorResource(R.color.blue_lion),
                                 fontSize = 15.sp,
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.width(50.dp).padding(bottom = 8.dp)
@@ -71,7 +72,7 @@ fun StudentScreen(){
                     }
 
                     HorizontalDivider(
-                        color = colorResource(R.color.yellowschool),
+                        color = colorResource(R.color.yellow_lion),
                         modifier = Modifier.padding(horizontal = 6.5.dp).padding(top = 10.dp)
                     )
                 }
@@ -80,9 +81,9 @@ fun StudentScreen(){
             Column(modifier = Modifier.align(
                 Alignment.CenterHorizontally).width(280.dp).padding(top = 45.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                 Image(painter = painterResource(R.drawable.ellipse), contentDescription = "",
-                    modifier = Modifier.size(140.dp).clip(shape = CircleShape).border(width = 3.5.dp, color = colorResource(R.color.yellowschool), shape = CircleShape))
-                Text("Luana Oliveira Dias", color = colorResource(R.color.blueschool), textAlign = TextAlign.Center, fontSize = 30.sp, fontWeight = FontWeight.W500)
-                Text("001 - Técnico em Desenvolvimento de Sistemas", color = colorResource(R.color.blueschool), textAlign = TextAlign.Center, fontWeight = FontWeight.W500, fontSize = 14.sp)
+                    modifier = Modifier.size(140.dp).clip(shape = CircleShape).border(width = 3.5.dp, color = colorResource(R.color.yellow_lion), shape = CircleShape))
+                Text("Luana Oliveira Dias", color = colorResource(R.color.blue_lion), textAlign = TextAlign.Center, fontSize = 30.sp, fontWeight = FontWeight.W500)
+                Text("001 - Técnico em Desenvolvimento de Sistemas", color = colorResource(R.color.blue_lion), textAlign = TextAlign.Center, fontWeight = FontWeight.W500, fontSize = 14.sp)
             }
 
             Card(modifier = Modifier.fillMaxSize().padding(top = 40.dp, bottom = 5.dp),
@@ -93,12 +94,12 @@ fun StudentScreen(){
                     Text(text = stringResource(R.string.behavior), color = Color.White, fontSize = 23.sp)
 
                     Column(Modifier.fillMaxWidth().height(350.dp).padding(horizontal = 30.dp, vertical = 40.dp), verticalArrangement = Arrangement.SpaceBetween){
-                        subjectCard()
-                        subjectCard()
-                        subjectCard()
-                        subjectCard()
-                        subjectCard()
-                        subjectCard()
+                        SubjectCard()
+                        SubjectCard()
+                        SubjectCard()
+                        SubjectCard()
+                        SubjectCard()
+                        SubjectCard()
                     }
 
                     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.align(alignment = Alignment.End).padding(end = 20.dp)) {
